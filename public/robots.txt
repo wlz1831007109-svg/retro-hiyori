@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://retro-hiyori.com/sitemap.xml
