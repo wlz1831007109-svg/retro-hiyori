@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Retro日和｜中国書画専門店</title><style>
+:root{--paper:#f6f1e8;--ink:#201d19;--muted:#746d64;--line:#d8cfc2;--seal:#8b3027}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Yu Mincho","Hiragino Mincho ProN",serif;line-height:1.7}
+header{position:sticky;top:0;z-index:10;background:#f6f1e8ee;border-bottom:1px solid var(--line);padding:18px 5vw;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:21px;font-weight:700;letter-spacing:.08em}.logo span{display:block;font:10px sans-serif;letter-spacing:.2em;color:var(--muted)}nav a{margin-left:24px;font:12px sans-serif}
+.hero{padding:80px 5vw 58px;max-width:1300px;margin:auto}.eyebrow{font:10px sans-serif;letter-spacing:.24em;color:var(--seal)}h1{font-size:clamp(38px,6vw,70px);font-weight:500;line-height:1.2;margin:15px 0}.hero p{color:var(--muted)}
+main{max-width:1300px;margin:auto;padding:0 5vw 90px}.sectionhead{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid var(--line);padding-bottom:16px;margin-bottom:30px}.sectionhead h2{font-size:30px;margin:0}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:42px 18px}.product{background:#fffaf2;border:1px solid #e2d9cc}.photo{border:0;padding:0;width:100%;height:420px;background:#eee;cursor:pointer}.photo img{width:100%;height:100%;object-fit:cover}.meta{padding:18px}small,.code{font:11px sans-serif;color:var(--muted)}h3{font-size:17px;font-weight:500;margin:8px 0}.price{font:20px sans-serif;margin:12px 0}.price span{font-size:10px;color:var(--muted)}button{font-family:inherit}.buy,.purchase{width:100%;padding:12px;border:1px solid var(--ink);background:transparent;cursor:pointer}.purchase{background:var(--ink);color:white;margin-top:22px}
+.detail{display:none;position:fixed;inset:0;z-index:30;background:#f7f2e9;overflow:auto;padding:70px 6vw;grid-template-columns:1.4fr .8fr;gap:45px}.detail:target{display:grid}.close{position:fixed;right:28px;top:20px;border:0;background:none;font-size:34px;cursor:pointer}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}.gallery img{width:100%;max-height:650px;object-fit:contain;background:white}.info{position:sticky;top:70px;align-self:start}.info h2{font-size:28px}.bigprice{font:28px sans-serif;margin:18px 0}dl{display:grid;grid-template-columns:110px 1fr;border-top:1px solid var(--line)}dt,dd{margin:0;padding:10px 0;border-bottom:1px solid var(--line);font-size:13px}dt{color:var(--muted)}.notice{font-size:12px;background:#eee6da;padding:16px;margin-top:18px}
+.modal{display:none;position:fixed;inset:0;z-index:50;background:#0008;align-items:center;justify-content:center;padding:20px}.modal:target{display:flex}.modalbox{background:#faf6ef;width:min(560px,100%);max-height:calc(100vh - 40px);overflow-y:auto;padding:28px;position:relative}.modalbox input,.modalbox textarea{width:100%;padding:10px;margin:5px 0 12px;border:1px solid var(--line);background:white}.modalbox textarea{height:90px}.modalbox .x{position:absolute;right:14px;top:8px;border:0;background:none;font-size:25px}footer{border-top:1px solid var(--line);padding:35px 5vw;font:11px sans-serif;color:var(--muted);display:flex;justify-content:space-between}
+@media(max-width:900px){.products{grid-template-columns:repeat(2,1fr)}.detail:target{grid-template-columns:1fr}.info{position:static}nav{display:none}}@media(max-width:520px){.products{grid-template-columns:1fr 1fr;gap:20px 8px}.photo{height:290px}.meta{padding:11px}.gallery{grid-template-columns:1fr}}
+
+a.photo,a.buy,a.purchase{display:block;text-decoration:none;color:inherit;text-align:center}a.purchase,.purchase{color:#fff}.close,.modalbox .x{text-decoration:none;color:var(--ink)}
+body:has(.detail:target),body:has(.modal:target){overflow:hidden}
+</style></head><body>
+<header><div class="logo">Retro日和<span>中国書画専門店</span></div><nav><a href="#works">作品</a><a href="#guide">ご利用案内</a><a href="https://www.instagram.com/retro_hiyori/">お問い合わせ</a></nav></header>
+<div class="hero"><div class="eyebrow">CHINESE PAINTING &amp; CALLIGRAPHY</div><h1>時を超えて、<br/>書画と出会う。</h1><p>中国書画の趣を、暮らしの中へ。今回の新着10点は印刷による複製画です。</p></div>
+<main id="works"><div class="sectionhead"><div><div class="eyebrow">NEW ARRIVALS</div><h2>新着作品</h2></div><small>10 works</small></div><div class="products"><article class="product">
+<a class="photo" href="#detail-DA001"><img alt="徐悲鴻款 駿馬図" loading="lazy" src="images/DA001/01.jpg"/></a>
+<div class="meta"><small>人物・動物画 / 掛軸 / 印刷作品</small><h3>徐悲鴻款 駿馬図</h3>
+<div class="code">管理番号 DA001</div><div class="price">¥13,000 <span>税込</span></div>
+<a class="buy" href="#detail-DA001">作品詳細を見る</a></div></article><article class="product">
+<a class="photo" href="#detail-DA090"><img alt="白伯驊款 黛玉葬花図" loading="lazy" src="images/DA090/01.jpg"/></a>
+<div class="meta"><small>人物画 / 掛軸 / 印刷作品</small><h3>白伯驊款 黛玉葬花図</h3>
+<div class="code">管理番号 DA090</div><div class="price">¥13,000 <span>税込</span></div>
+<a class="buy" href="#detail-DA090">作品詳細を見る</a></div></article><article class="product">
+<a class="photo" href="#detail-DA024"><img alt="劉奎齢款 秋樹牧牛図" loading="lazy" src="images/DA024/01.jpg"/></a>
+<div class="meta"><small>人物・動物画 / 掛軸 / 印刷作品</small><h3>劉奎齢款 秋樹牧牛図</h3>
+<div class="code">管理番号 DA024</div><div class="price">¥13,000 <span>税込</span></div>
+<a class="buy" href="#detail-DA024">作品詳細を見る</a></div></article><article class="product">
+<a class="photo" href="#detail-DA035"><img alt="沈銓款 九如図" loading="lazy" src="images/DA035/01.jpg"/></a>
+<div class="meta"><small>花鳥・動物画 / 掛軸 / 印刷作品</small><h3>沈銓款 九如図</h3>
+<div class="code">管理番号 DA035</div><div class="price">¥13,000 <span>税込</span></div>
+<a class="buy" href="#detail-DA035">作品詳細を見る</a></div></article><article class="product">
+<a class="photo" href="#detail-DA081"><img alt="丁観鵬款 五龍王朝拝観音図" loading="lazy" src="images/DA081/01.jpg"/></a>
+<div class="meta"><small>人物画 / 掛軸 / 印刷作品</small><h3>丁観鵬款 五龍王朝拝観音図</h3>
+<div class="code">管理番号 DA081</div><div class="price">¥13,000 <span>税込</span></div>
+<a class="buy" href="#detail-DA081">作品詳細を見る</a></div></article><article class="product">
+<a class="photo" href="#detail-DA040"><img alt="丁観鵬款 送子観音図" loading="lazy" src="images/DA040/01.jpg"/></a>
+<div class="meta"><small>人物画 / 掛軸 / 印刷作品</small><h3>丁観鵬款 送子観音図</h3>
+<div class="code">管理番号 DA040</div><div class="price">¥13,000 <span>税込</span></div>
+<a class="buy" href="#detail-DA040">作品詳細を見る</a></div></article><article class="product">
+<a class="photo" href="#detail-DA039"><img alt="凌雪款 荷花九魚図" loading="lazy" src="images/DA039/01.jpg"/></a>
+<div class="meta"><small>花鳥画 / 掛軸 / 印刷作品</small><h3>凌雪款 荷花九魚図</h3>
+<div class="code">管理番号 DA039</div><div class="price">¥13,000 <span>税込</span></div>
+<a class="buy" href="#detail-DA039">作品詳細を見る</a></div></article><article class="product">
+<a class="photo" href="#detail-DA011"><img alt="任伯年款 鍾馗夜訓図" loading="lazy" src="images/DA011/01.jpg"/></a>
+<div class="meta"><small>人物画 / 掛軸 / 印刷作品</small><h3>任伯年款 鍾馗夜訓図</h3>
+<div class="code">管理番号 DA011</div><div class="price">¥13,000 <span>税込</span></div>
+<a class="buy" href="#detail-DA011">作品詳細を見る</a></div></article><article class="product">
+<a class="photo" href="#detail-DA032"><img alt="程璋款 双猫窺魚図" loading="lazy" src="images/DA032/01.jpg"/></a>
+<div class="meta"><small>花鳥・動物画 / 掛軸 / 印刷作品</small><h3>程璋款 双猫窺魚図</h3>
+<div class="code">管理番号 DA032</div><div class="price">¥13,000 <span>税込</span></div>
+<a class="buy" href="#detail-DA032">作品詳細を見る</a></div></article><article class="product">
+<a class="photo" href="#detail-DA005"><img alt="張大千款 金銭荷花図" loading="lazy" src="images/DA005/01.jpg"/></a>
+<div class="meta"><small>花鳥画 / 掛軸 / 印刷作品</small><h3>張大千款 金銭荷花図</h3>
+<div class="code">管理番号 DA005</div><div class="price">¥13,000 <span>税込</span></div>
+<a class="buy" href="#detail-DA005">作品詳細を見る</a></div></article></div></main>
+<section class="detail" id="detail-DA001">
+<a class="close" href="#works">×</a>
+<div class="gallery"><img alt="徐悲鴻款 駿馬図" loading="lazy" src="images/DA001/01.jpg"/><img alt="徐悲鴻款 駿馬図" loading="lazy" src="images/DA001/02.jpg"/><img alt="徐悲鴻款 駿馬図" loading="lazy" src="images/DA001/03.jpg"/><img alt="徐悲鴻款 駿馬図" loading="lazy" src="images/DA001/04.jpg"/><img alt="徐悲鴻款 駿馬図" loading="lazy" src="images/DA001/05.jpg"/><img alt="徐悲鴻款 駿馬図" loading="lazy" src="images/DA001/06.jpg"/><img alt="徐悲鴻款 駿馬図" loading="lazy" src="images/DA001/07.jpg"/><img alt="徐悲鴻款 駿馬図" loading="lazy" src="images/DA001/08.jpg"/><img alt="徐悲鴻款 駿馬図" loading="lazy" src="images/DA001/09.jpg"/><img alt="徐悲鴻款 駿馬図" loading="lazy" src="images/DA001/10.jpg"/><img alt="徐悲鴻款 駿馬図" loading="lazy" src="images/DA001/11.jpg"/><img alt="徐悲鴻款 駿馬図" loading="lazy" src="images/DA001/12.jpg"/><img alt="徐悲鴻款 駿馬図" loading="lazy" src="images/DA001/13.jpg"/><img alt="徐悲鴻款 駿馬図" loading="lazy" src="images/DA001/14.jpg"/><img alt="徐悲鴻款 駿馬図" loading="lazy" src="images/DA001/15.jpg"/><img alt="徐悲鴻款 駿馬図" loading="lazy" src="images/DA001/16.jpg"/></div>
+<div class="info"><div class="eyebrow">PRINTED HANGING SCROLL</div><h2>徐悲鴻款 駿馬図</h2>
+<p class="sku">管理番号：DA001</p><div class="bigprice">¥13,000 <small>（税込）</small></div>
+<dl><dt>作品種別</dt><dd>印刷作品（複製画）</dd><dt>形式</dt><dd>四尺中堂・掛軸</dd>
+<dt>材質</dt><dd>宣紙</dd><dt>表装サイズ</dt><dd>約200 × 70 cm</dd>
+<dt>画心サイズ</dt><dd>約110 × 60 cm</dd></dl>
+<div class="notice"><b>作者表記・作品について</b><br/>本品は肉筆作品ではなく、印刷による複製画です。商品名の画家名は原画・図様または作品上の表記に基づくもので、当該画家本人による肉筆作品を示すものではありません。状態は掲載写真をご確認ください。</div>
+<a class="purchase" href="#order-DA001">購入を申し込む</a>
+</div></section><section class="detail" id="detail-DA090">
+<a class="close" href="#works">×</a>
+<div class="gallery"><img alt="白伯驊款 黛玉葬花図" loading="lazy" src="images/DA090/01.jpg"/><img alt="白伯驊款 黛玉葬花図" loading="lazy" src="images/DA090/02.jpg"/><img alt="白伯驊款 黛玉葬花図" loading="lazy" src="images/DA090/03.jpg"/><img alt="白伯驊款 黛玉葬花図" loading="lazy" src="images/DA090/04.jpg"/><img alt="白伯驊款 黛玉葬花図" loading="lazy" src="images/DA090/05.jpg"/><img alt="白伯驊款 黛玉葬花図" loading="lazy" src="images/DA090/06.jpg"/><img alt="白伯驊款 黛玉葬花図" loading="lazy" src="images/DA090/07.jpg"/><img alt="白伯驊款 黛玉葬花図" loading="lazy" src="images/DA090/08.jpg"/><img alt="白伯驊款 黛玉葬花図" loading="lazy" src="images/DA090/09.jpg"/></div>
+<div class="info"><div class="eyebrow">PRINTED HANGING SCROLL</div><h2>白伯驊款 黛玉葬花図</h2>
+<p class="sku">管理番号：DA090</p><div class="bigprice">¥13,000 <small>（税込）</small></div>
+<dl><dt>作品種別</dt><dd>印刷作品（複製画）</dd><dt>形式</dt><dd>四尺中堂・掛軸</dd>
+<dt>材質</dt><dd>宣紙</dd><dt>表装サイズ</dt><dd>約200 × 70 cm</dd>
+<dt>画心サイズ</dt><dd>約110 × 60 cm</dd></dl>
+<div class="notice"><b>作者表記・作品について</b><br/>本品は肉筆作品ではなく、印刷による複製画です。商品名の画家名は原画・図様または作品上の表記に基づくもので、当該画家本人による肉筆作品を示すものではありません。状態は掲載写真をご確認ください。</div>
+<a class="purchase" href="#order-DA090">購入を申し込む</a>
+</div></section><section class="detail" id="detail-DA024">
+<a class="close" href="#works">×</a>
+<div class="gallery"><img alt="劉奎齢款 秋樹牧牛図" loading="lazy" src="images/DA024/01.jpg"/><img alt="劉奎齢款 秋樹牧牛図" loading="lazy" src="images/DA024/02.jpg"/><img alt="劉奎齢款 秋樹牧牛図" loading="lazy" src="images/DA024/03.jpg"/><img alt="劉奎齢款 秋樹牧牛図" loading="lazy" src="images/DA024/04.jpg"/><img alt="劉奎齢款 秋樹牧牛図" loading="lazy" src="images/DA024/05.jpg"/><img alt="劉奎齢款 秋樹牧牛図" loading="lazy" src="images/DA024/06.jpg"/><img alt="劉奎齢款 秋樹牧牛図" loading="lazy" src="images/DA024/07.jpg"/><img alt="劉奎齢款 秋樹牧牛図" loading="lazy" src="images/DA024/08.jpg"/><img alt="劉奎齢款 秋樹牧牛図" loading="lazy" src="images/DA024/09.jpg"/><img alt="劉奎齢款 秋樹牧牛図" loading="lazy" src="images/DA024/10.jpg"/><img alt="劉奎齢款 秋樹牧牛図" loading="lazy" src="images/DA024/11.jpg"/></div>
+<div class="info"><div class="eyebrow">PRINTED HANGING SCROLL</div><h2>劉奎齢款 秋樹牧牛図</h2>
+<p class="sku">管理番号：DA024</p><div class="bigprice">¥13,000 <small>（税込）</small></div>
+<dl><dt>作品種別</dt><dd>印刷作品（複製画）</dd><dt>形式</dt><dd>四尺中堂・掛軸</dd>
+<dt>材質</dt><dd>宣紙</dd><dt>表装サイズ</dt><dd>約200 × 70 cm</dd>
+<dt>画心サイズ</dt><dd>約110 × 60 cm</dd></dl>
+<div class="notice"><b>作者表記・作品について</b><br/>本品は肉筆作品ではなく、印刷による複製画です。商品名の画家名は原画・図様または作品上の表記に基づくもので、当該画家本人による肉筆作品を示すものではありません。状態は掲載写真をご確認ください。</div>
+<a class="purchase" href="#order-DA024">購入を申し込む</a>
+</div></section><section class="detail" id="detail-DA035">
+<a class="close" href="#works">×</a>
+<div class="gallery"><img alt="沈銓款 九如図" loading="lazy" src="images/DA035/01.jpg"/><img alt="沈銓款 九如図" loading="lazy" src="images/DA035/02.jpg"/><img alt="沈銓款 九如図" loading="lazy" src="images/DA035/03.jpg"/><img alt="沈銓款 九如図" loading="lazy" src="images/DA035/04.jpg"/><img alt="沈銓款 九如図" loading="lazy" src="images/DA035/05.jpg"/><img alt="沈銓款 九如図" loading="lazy" src="images/DA035/06.jpg"/><img alt="沈銓款 九如図" loading="lazy" src="images/DA035/07.jpg"/><img alt="沈銓款 九如図" loading="lazy" src="images/DA035/08.jpg"/><img alt="沈銓款 九如図" loading="lazy" src="images/DA035/09.jpg"/><img alt="沈銓款 九如図" loading="lazy" src="images/DA035/10.jpg"/></div>
+<div class="info"><div class="eyebrow">PRINTED HANGING SCROLL</div><h2>沈銓款 九如図</h2>
+<p class="sku">管理番号：DA035</p><div class="bigprice">¥13,000 <small>（税込）</small></div>
+<dl><dt>作品種別</dt><dd>印刷作品（複製画）</dd><dt>形式</dt><dd>四尺中堂・掛軸</dd>
+<dt>材質</dt><dd>宣紙</dd><dt>表装サイズ</dt><dd>約200 × 70 cm</dd>
+<dt>画心サイズ</dt><dd>約110 × 60 cm</dd></dl>
+<div class="notice"><b>作者表記・作品について</b><br/>本品は肉筆作品ではなく、印刷による複製画です。商品名の画家名は原画・図様または作品上の表記に基づくもので、当該画家本人による肉筆作品を示すものではありません。状態は掲載写真をご確認ください。</div>
+<a class="purchase" href="#order-DA035">購入を申し込む</a>
+</div></section><section class="detail" id="detail-DA081">
+<a class="close" href="#works">×</a>
+<div class="gallery"><img alt="丁観鵬款 五龍王朝拝観音図" loading="lazy" src="images/DA081/01.jpg"/><img alt="丁観鵬款 五龍王朝拝観音図" loading="lazy" src="images/DA081/02.jpg"/><img alt="丁観鵬款 五龍王朝拝観音図" loading="lazy" src="images/DA081/03.jpg"/><img alt="丁観鵬款 五龍王朝拝観音図" loading="lazy" src="images/DA081/04.jpg"/><img alt="丁観鵬款 五龍王朝拝観音図" loading="lazy" src="images/DA081/05.jpg"/><img alt="丁観鵬款 五龍王朝拝観音図" loading="lazy" src="images/DA081/06.jpg"/><img alt="丁観鵬款 五龍王朝拝観音図" loading="lazy" src="images/DA081/07.jpg"/><img alt="丁観鵬款 五龍王朝拝観音図" loading="lazy" src="images/DA081/08.jpg"/><img alt="丁観鵬款 五龍王朝拝観音図" loading="lazy" src="images/DA081/09.jpg"/><img alt="丁観鵬款 五龍王朝拝観音図" loading="lazy" src="images/DA081/10.jpg"/><img alt="丁観鵬款 五龍王朝拝観音図" loading="lazy" src="images/DA081/11.jpg"/></div>
+<div class="info"><div class="eyebrow">PRINTED HANGING SCROLL</div><h2>丁観鵬款 五龍王朝拝観音図</h2>
+<p class="sku">管理番号：DA081</p><div class="bigprice">¥13,000 <small>（税込）</small></div>
+<dl><dt>作品種別</dt><dd>印刷作品（複製画）</dd><dt>形式</dt><dd>四尺中堂・掛軸</dd>
+<dt>材質</dt><dd>詳細不明</dd><dt>表装サイズ</dt><dd>約200 × 70 cm</dd>
+<dt>画心サイズ</dt><dd>約110 × 60 cm</dd></dl>
+<div class="notice"><b>作者表記・作品について</b><br/>本品は肉筆作品ではなく、印刷による複製画です。商品名の画家名は原画・図様または作品上の表記に基づくもので、当該画家本人による肉筆作品を示すものではありません。状態は掲載写真をご確認ください。</div>
+<a class="purchase" href="#order-DA081">購入を申し込む</a>
+</div></section><section class="detail" id="detail-DA040">
+<a class="close" href="#works">×</a>
+<div class="gallery"><img alt="丁観鵬款 送子観音図" loading="lazy" src="images/DA040/01.jpg"/><img alt="丁観鵬款 送子観音図" loading="lazy" src="images/DA040/02.jpg"/><img alt="丁観鵬款 送子観音図" loading="lazy" src="images/DA040/03.jpg"/><img alt="丁観鵬款 送子観音図" loading="lazy" src="images/DA040/04.jpg"/><img alt="丁観鵬款 送子観音図" loading="lazy" src="images/DA040/05.jpg"/><img alt="丁観鵬款 送子観音図" loading="lazy" src="images/DA040/06.jpg"/><img alt="丁観鵬款 送子観音図" loading="lazy" src="images/DA040/07.jpg"/><img alt="丁観鵬款 送子観音図" loading="lazy" src="images/DA040/08.jpg"/><img alt="丁観鵬款 送子観音図" loading="lazy" src="images/DA040/09.jpg"/><img alt="丁観鵬款 送子観音図" loading="lazy" src="images/DA040/10.jpg"/></div>
+<div class="info"><div class="eyebrow">PRINTED HANGING SCROLL</div><h2>丁観鵬款 送子観音図</h2>
+<p class="sku">管理番号：DA040</p><div class="bigprice">¥13,000 <small>（税込）</small></div>
+<dl><dt>作品種別</dt><dd>印刷作品（複製画）</dd><dt>形式</dt><dd>四尺中堂・掛軸</dd>
+<dt>材質</dt><dd>宣紙</dd><dt>表装サイズ</dt><dd>約200 × 70 cm</dd>
+<dt>画心サイズ</dt><dd>約110 × 60 cm</dd></dl>
+<div class="notice"><b>作者表記・作品について</b><br/>本品は肉筆作品ではなく、印刷による複製画です。商品名の画家名は原画・図様または作品上の表記に基づくもので、当該画家本人による肉筆作品を示すものではありません。状態は掲載写真をご確認ください。</div>
+<a class="purchase" href="#order-DA040">購入を申し込む</a>
+</div></section><section class="detail" id="detail-DA039">
+<a class="close" href="#works">×</a>
+<div class="gallery"><img alt="凌雪款 荷花九魚図" loading="lazy" src="images/DA039/01.jpg"/><img alt="凌雪款 荷花九魚図" loading="lazy" src="images/DA039/02.jpg"/><img alt="凌雪款 荷花九魚図" loading="lazy" src="images/DA039/03.jpg"/><img alt="凌雪款 荷花九魚図" loading="lazy" src="images/DA039/04.jpg"/><img alt="凌雪款 荷花九魚図" loading="lazy" src="images/DA039/05.jpg"/><img alt="凌雪款 荷花九魚図" loading="lazy" src="images/DA039/06.jpg"/><img alt="凌雪款 荷花九魚図" loading="lazy" src="images/DA039/07.jpg"/><img alt="凌雪款 荷花九魚図" loading="lazy" src="images/DA039/08.jpg"/><img alt="凌雪款 荷花九魚図" loading="lazy" src="images/DA039/09.jpg"/><img alt="凌雪款 荷花九魚図" loading="lazy" src="images/DA039/10.jpg"/><img alt="凌雪款 荷花九魚図" loading="lazy" src="images/DA039/11.jpg"/></div>
+<div class="info"><div class="eyebrow">PRINTED HANGING SCROLL</div><h2>凌雪款 荷花九魚図</h2>
+<p class="sku">管理番号：DA039</p><div class="bigprice">¥13,000 <small>（税込）</small></div>
+<dl><dt>作品種別</dt><dd>印刷作品（複製画）</dd><dt>形式</dt><dd>四尺中堂・掛軸</dd>
+<dt>材質</dt><dd>宣紙</dd><dt>表装サイズ</dt><dd>約200 × 70 cm</dd>
+<dt>画心サイズ</dt><dd>約110 × 60 cm</dd></dl>
+<div class="notice"><b>作者表記・作品について</b><br/>本品は肉筆作品ではなく、印刷による複製画です。商品名の画家名は原画・図様または作品上の表記に基づくもので、当該画家本人による肉筆作品を示すものではありません。状態は掲載写真をご確認ください。</div>
+<a class="purchase" href="#order-DA039">購入を申し込む</a>
+</div></section><section class="detail" id="detail-DA011">
+<a class="close" href="#works">×</a>
+<div class="gallery"><img alt="任伯年款 鍾馗夜訓図" loading="lazy" src="images/DA011/01.jpg"/><img alt="任伯年款 鍾馗夜訓図" loading="lazy" src="images/DA011/02.jpg"/><img alt="任伯年款 鍾馗夜訓図" loading="lazy" src="images/DA011/03.jpg"/><img alt="任伯年款 鍾馗夜訓図" loading="lazy" src="images/DA011/04.jpg"/><img alt="任伯年款 鍾馗夜訓図" loading="lazy" src="images/DA011/05.jpg"/><img alt="任伯年款 鍾馗夜訓図" loading="lazy" src="images/DA011/06.jpg"/><img alt="任伯年款 鍾馗夜訓図" loading="lazy" src="images/DA011/07.jpg"/><img alt="任伯年款 鍾馗夜訓図" loading="lazy" src="images/DA011/08.jpg"/></div>
+<div class="info"><div class="eyebrow">PRINTED HANGING SCROLL</div><h2>任伯年款 鍾馗夜訓図</h2>
+<p class="sku">管理番号：DA011</p><div class="bigprice">¥13,000 <small>（税込）</small></div>
+<dl><dt>作品種別</dt><dd>印刷作品（複製画）</dd><dt>形式</dt><dd>四尺中堂・掛軸</dd>
+<dt>材質</dt><dd>宣紙</dd><dt>表装サイズ</dt><dd>約200 × 70 cm</dd>
+<dt>画心サイズ</dt><dd>約110 × 60 cm</dd></dl>
+<div class="notice"><b>作者表記・作品について</b><br/>本品は肉筆作品ではなく、印刷による複製画です。商品名の画家名は原画・図様または作品上の表記に基づくもので、当該画家本人による肉筆作品を示すものではありません。状態は掲載写真をご確認ください。</div>
+<a class="purchase" href="#order-DA011">購入を申し込む</a>
+</div></section><section class="detail" id="detail-DA032">
+<a class="close" href="#works">×</a>
+<div class="gallery"><img alt="程璋款 双猫窺魚図" loading="lazy" src="images/DA032/01.jpg"/><img alt="程璋款 双猫窺魚図" loading="lazy" src="images/DA032/02.jpg"/><img alt="程璋款 双猫窺魚図" loading="lazy" src="images/DA032/03.jpg"/><img alt="程璋款 双猫窺魚図" loading="lazy" src="images/DA032/04.jpg"/><img alt="程璋款 双猫窺魚図" loading="lazy" src="images/DA032/05.jpg"/><img alt="程璋款 双猫窺魚図" loading="lazy" src="images/DA032/06.jpg"/><img alt="程璋款 双猫窺魚図" loading="lazy" src="images/DA032/07.jpg"/><img alt="程璋款 双猫窺魚図" loading="lazy" src="images/DA032/08.jpg"/><img alt="程璋款 双猫窺魚図" loading="lazy" src="images/DA032/09.jpg"/><img alt="程璋款 双猫窺魚図" loading="lazy" src="images/DA032/10.jpg"/><img alt="程璋款 双猫窺魚図" loading="lazy" src="images/DA032/11.jpg"/><img alt="程璋款 双猫窺魚図" loading="lazy" src="images/DA032/12.jpg"/><img alt="程璋款 双猫窺魚図" loading="lazy" src="images/DA032/13.jpg"/></div>
+<div class="info"><div class="eyebrow">PRINTED HANGING SCROLL</div><h2>程璋款 双猫窺魚図</h2>
+<p class="sku">管理番号：DA032</p><div class="bigprice">¥13,000 <small>（税込）</small></div>
+<dl><dt>作品種別</dt><dd>印刷作品（複製画）</dd><dt>形式</dt><dd>四尺中堂・掛軸</dd>
+<dt>材質</dt><dd>宣紙</dd><dt>表装サイズ</dt><dd>約200 × 70 cm</dd>
+<dt>画心サイズ</dt><dd>約110 × 60 cm</dd></dl>
+<div class="notice"><b>作者表記・作品について</b><br/>本品は肉筆作品ではなく、印刷による複製画です。商品名の画家名は原画・図様または作品上の表記に基づくもので、当該画家本人による肉筆作品を示すものではありません。状態は掲載写真をご確認ください。</div>
+<a class="purchase" href="#order-DA032">購入を申し込む</a>
+</div></section><section class="detail" id="detail-DA005">
+<a class="close" href="#works">×</a>
+<div class="gallery"><img alt="張大千款 金銭荷花図" loading="lazy" src="images/DA005/01.jpg"/><img alt="張大千款 金銭荷花図" loading="lazy" src="images/DA005/02.jpg"/><img alt="張大千款 金銭荷花図" loading="lazy" src="images/DA005/03.jpg"/><img alt="張大千款 金銭荷花図" loading="lazy" src="images/DA005/04.jpg"/><img alt="張大千款 金銭荷花図" loading="lazy" src="images/DA005/05.jpg"/><img alt="張大千款 金銭荷花図" loading="lazy" src="images/DA005/06.jpg"/><img alt="張大千款 金銭荷花図" loading="lazy" src="images/DA005/07.jpg"/><img alt="張大千款 金銭荷花図" loading="lazy" src="images/DA005/08.jpg"/><img alt="張大千款 金銭荷花図" loading="lazy" src="images/DA005/09.jpg"/></div>
+<div class="info"><div class="eyebrow">PRINTED HANGING SCROLL</div><h2>張大千款 金銭荷花図</h2>
+<p class="sku">管理番号：DA005</p><div class="bigprice">¥13,000 <small>（税込）</small></div>
+<dl><dt>作品種別</dt><dd>印刷作品（複製画）</dd><dt>形式</dt><dd>四尺中堂・掛軸</dd>
+<dt>材質</dt><dd>宣紙</dd><dt>表装サイズ</dt><dd>約200 × 70 cm</dd>
+<dt>画心サイズ</dt><dd>約110 × 60 cm</dd></dl>
+<div class="notice"><b>作者表記・作品について</b><br/>本品は肉筆作品ではなく、印刷による複製画です。商品名の画家名は原画・図様または作品上の表記に基づくもので、当該画家本人による肉筆作品を示すものではありません。状態は掲載写真をご確認ください。</div>
+<a class="purchase" href="#order-DA005">購入を申し込む</a>
+</div></section>
+
+<section class="modal" id="order-DA001"><div class="modalbox"><a class="x" href="#detail-DA001">×</a><h2>ご注文</h2><p>DA001｜徐悲鴻款 駿馬図｜¥13,000</p>
+<form action="https://formsubmit.co/1831007109@qq.com" method="POST">
+<input name="商品" type="hidden" value="DA001｜徐悲鴻款 駿馬図｜¥13,000"/>
+<input name="お支払い方法" type="hidden" value="銀行振込"/>
+<input name="_subject" type="hidden" value="【Retro日和】新しいご注文"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_next" type="hidden" value="https://retro-hiyori.com/thanks.html"/>
+<input name="_autoresponse" type="hidden" value="Retro日和をご利用いただきありがとうございます。ご注文内容を受け付けました。在庫確認後、銀行振込のご案内をメールにてお送りいたします。現時点ではご入金なさらないようお願いいたします。"/>
+<input name="_honey" style="display:none" type="text"/>
+<label>お名前</label><input autocomplete="name" name="お名前" required=""/>
+<label>メールアドレス</label><input autocomplete="email" name="email" required="" type="email"/>
+<label>電話番号</label><input autocomplete="tel" name="電話番号" required="" type="tel"/>
+<label>郵便番号</label><input autocomplete="postal-code" inputmode="numeric" name="郵便番号" placeholder="例：650-0000" required=""/>
+<label>配送先住所</label><textarea autocomplete="street-address" name="配送先住所" required=""></textarea>
+<label>備考</label><textarea name="備考"></textarea>
+<label style="display:flex;gap:8px;align-items:flex-start;font-size:12px;margin:4px 0 12px"><input required="" style="width:auto;margin-top:5px" type="checkbox"/>入力した個人情報を、ご注文対応・配送連絡のために利用することに同意します。</label>
+<div class="notice">ご注文送信後、在庫を確認してから銀行振込先をご案内いたします。確認メールが届くまでご入金はお控えください。</div>
+<button class="purchase" type="submit">注文を送信する</button></form></div></section><section class="modal" id="order-DA090"><div class="modalbox"><a class="x" href="#detail-DA090">×</a><h2>ご注文</h2><p>DA090｜白伯驊款 黛玉葬花図｜¥13,000</p>
+<form action="https://formsubmit.co/1831007109@qq.com" method="POST">
+<input name="商品" type="hidden" value="DA090｜白伯驊款 黛玉葬花図｜¥13,000"/>
+<input name="お支払い方法" type="hidden" value="銀行振込"/>
+<input name="_subject" type="hidden" value="【Retro日和】新しいご注文"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_next" type="hidden" value="https://retro-hiyori.com/thanks.html"/>
+<input name="_autoresponse" type="hidden" value="Retro日和をご利用いただきありがとうございます。ご注文内容を受け付けました。在庫確認後、銀行振込のご案内をメールにてお送りいたします。現時点ではご入金なさらないようお願いいたします。"/>
+<input name="_honey" style="display:none" type="text"/>
+<label>お名前</label><input autocomplete="name" name="お名前" required=""/>
+<label>メールアドレス</label><input autocomplete="email" name="email" required="" type="email"/>
+<label>電話番号</label><input autocomplete="tel" name="電話番号" required="" type="tel"/>
+<label>郵便番号</label><input autocomplete="postal-code" inputmode="numeric" name="郵便番号" placeholder="例：650-0000" required=""/>
+<label>配送先住所</label><textarea autocomplete="street-address" name="配送先住所" required=""></textarea>
+<label>備考</label><textarea name="備考"></textarea>
+<label style="display:flex;gap:8px;align-items:flex-start;font-size:12px;margin:4px 0 12px"><input required="" style="width:auto;margin-top:5px" type="checkbox"/>入力した個人情報を、ご注文対応・配送連絡のために利用することに同意します。</label>
+<div class="notice">ご注文送信後、在庫を確認してから銀行振込先をご案内いたします。確認メールが届くまでご入金はお控えください。</div>
+<button class="purchase" type="submit">注文を送信する</button></form></div></section><section class="modal" id="order-DA024"><div class="modalbox"><a class="x" href="#detail-DA024">×</a><h2>ご注文</h2><p>DA024｜劉奎齢款 秋樹牧牛図｜¥13,000</p>
+<form action="https://formsubmit.co/1831007109@qq.com" method="POST">
+<input name="商品" type="hidden" value="DA024｜劉奎齢款 秋樹牧牛図｜¥13,000"/>
+<input name="お支払い方法" type="hidden" value="銀行振込"/>
+<input name="_subject" type="hidden" value="【Retro日和】新しいご注文"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_next" type="hidden" value="https://retro-hiyori.com/thanks.html"/>
+<input name="_autoresponse" type="hidden" value="Retro日和をご利用いただきありがとうございます。ご注文内容を受け付けました。在庫確認後、銀行振込のご案内をメールにてお送りいたします。現時点ではご入金なさらないようお願いいたします。"/>
+<input name="_honey" style="display:none" type="text"/>
+<label>お名前</label><input autocomplete="name" name="お名前" required=""/>
+<label>メールアドレス</label><input autocomplete="email" name="email" required="" type="email"/>
+<label>電話番号</label><input autocomplete="tel" name="電話番号" required="" type="tel"/>
+<label>郵便番号</label><input autocomplete="postal-code" inputmode="numeric" name="郵便番号" placeholder="例：650-0000" required=""/>
+<label>配送先住所</label><textarea autocomplete="street-address" name="配送先住所" required=""></textarea>
+<label>備考</label><textarea name="備考"></textarea>
+<label style="display:flex;gap:8px;align-items:flex-start;font-size:12px;margin:4px 0 12px"><input required="" style="width:auto;margin-top:5px" type="checkbox"/>入力した個人情報を、ご注文対応・配送連絡のために利用することに同意します。</label>
+<div class="notice">ご注文送信後、在庫を確認してから銀行振込先をご案内いたします。確認メールが届くまでご入金はお控えください。</div>
+<button class="purchase" type="submit">注文を送信する</button></form></div></section><section class="modal" id="order-DA035"><div class="modalbox"><a class="x" href="#detail-DA035">×</a><h2>ご注文</h2><p>DA035｜沈銓款 九如図｜¥13,000</p>
+<form action="https://formsubmit.co/1831007109@qq.com" method="POST">
+<input name="商品" type="hidden" value="DA035｜沈銓款 九如図｜¥13,000"/>
+<input name="お支払い方法" type="hidden" value="銀行振込"/>
+<input name="_subject" type="hidden" value="【Retro日和】新しいご注文"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_next" type="hidden" value="https://retro-hiyori.com/thanks.html"/>
+<input name="_autoresponse" type="hidden" value="Retro日和をご利用いただきありがとうございます。ご注文内容を受け付けました。在庫確認後、銀行振込のご案内をメールにてお送りいたします。現時点ではご入金なさらないようお願いいたします。"/>
+<input name="_honey" style="display:none" type="text"/>
+<label>お名前</label><input autocomplete="name" name="お名前" required=""/>
+<label>メールアドレス</label><input autocomplete="email" name="email" required="" type="email"/>
+<label>電話番号</label><input autocomplete="tel" name="電話番号" required="" type="tel"/>
+<label>郵便番号</label><input autocomplete="postal-code" inputmode="numeric" name="郵便番号" placeholder="例：650-0000" required=""/>
+<label>配送先住所</label><textarea autocomplete="street-address" name="配送先住所" required=""></textarea>
+<label>備考</label><textarea name="備考"></textarea>
+<label style="display:flex;gap:8px;align-items:flex-start;font-size:12px;margin:4px 0 12px"><input required="" style="width:auto;margin-top:5px" type="checkbox"/>入力した個人情報を、ご注文対応・配送連絡のために利用することに同意します。</label>
+<div class="notice">ご注文送信後、在庫を確認してから銀行振込先をご案内いたします。確認メールが届くまでご入金はお控えください。</div>
+<button class="purchase" type="submit">注文を送信する</button></form></div></section><section class="modal" id="order-DA081"><div class="modalbox"><a class="x" href="#detail-DA081">×</a><h2>ご注文</h2><p>DA081｜丁観鵬款 五龍王朝拝観音図｜¥13,000</p>
+<form action="https://formsubmit.co/1831007109@qq.com" method="POST">
+<input name="商品" type="hidden" value="DA081｜丁観鵬款 五龍王朝拝観音図｜¥13,000"/>
+<input name="お支払い方法" type="hidden" value="銀行振込"/>
+<input name="_subject" type="hidden" value="【Retro日和】新しいご注文"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_next" type="hidden" value="https://retro-hiyori.com/thanks.html"/>
+<input name="_autoresponse" type="hidden" value="Retro日和をご利用いただきありがとうございます。ご注文内容を受け付けました。在庫確認後、銀行振込のご案内をメールにてお送りいたします。現時点ではご入金なさらないようお願いいたします。"/>
+<input name="_honey" style="display:none" type="text"/>
+<label>お名前</label><input autocomplete="name" name="お名前" required=""/>
+<label>メールアドレス</label><input autocomplete="email" name="email" required="" type="email"/>
+<label>電話番号</label><input autocomplete="tel" name="電話番号" required="" type="tel"/>
+<label>郵便番号</label><input autocomplete="postal-code" inputmode="numeric" name="郵便番号" placeholder="例：650-0000" required=""/>
+<label>配送先住所</label><textarea autocomplete="street-address" name="配送先住所" required=""></textarea>
+<label>備考</label><textarea name="備考"></textarea>
+<label style="display:flex;gap:8px;align-items:flex-start;font-size:12px;margin:4px 0 12px"><input required="" style="width:auto;margin-top:5px" type="checkbox"/>入力した個人情報を、ご注文対応・配送連絡のために利用することに同意します。</label>
+<div class="notice">ご注文送信後、在庫を確認してから銀行振込先をご案内いたします。確認メールが届くまでご入金はお控えください。</div>
+<button class="purchase" type="submit">注文を送信する</button></form></div></section><section class="modal" id="order-DA040"><div class="modalbox"><a class="x" href="#detail-DA040">×</a><h2>ご注文</h2><p>DA040｜丁観鵬款 送子観音図｜¥13,000</p>
+<form action="https://formsubmit.co/1831007109@qq.com" method="POST">
+<input name="商品" type="hidden" value="DA040｜丁観鵬款 送子観音図｜¥13,000"/>
+<input name="お支払い方法" type="hidden" value="銀行振込"/>
+<input name="_subject" type="hidden" value="【Retro日和】新しいご注文"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_next" type="hidden" value="https://retro-hiyori.com/thanks.html"/>
+<input name="_autoresponse" type="hidden" value="Retro日和をご利用いただきありがとうございます。ご注文内容を受け付けました。在庫確認後、銀行振込のご案内をメールにてお送りいたします。現時点ではご入金なさらないようお願いいたします。"/>
+<input name="_honey" style="display:none" type="text"/>
+<label>お名前</label><input autocomplete="name" name="お名前" required=""/>
+<label>メールアドレス</label><input autocomplete="email" name="email" required="" type="email"/>
+<label>電話番号</label><input autocomplete="tel" name="電話番号" required="" type="tel"/>
+<label>郵便番号</label><input autocomplete="postal-code" inputmode="numeric" name="郵便番号" placeholder="例：650-0000" required=""/>
+<label>配送先住所</label><textarea autocomplete="street-address" name="配送先住所" required=""></textarea>
+<label>備考</label><textarea name="備考"></textarea>
+<label style="display:flex;gap:8px;align-items:flex-start;font-size:12px;margin:4px 0 12px"><input required="" style="width:auto;margin-top:5px" type="checkbox"/>入力した個人情報を、ご注文対応・配送連絡のために利用することに同意します。</label>
+<div class="notice">ご注文送信後、在庫を確認してから銀行振込先をご案内いたします。確認メールが届くまでご入金はお控えください。</div>
+<button class="purchase" type="submit">注文を送信する</button></form></div></section><section class="modal" id="order-DA039"><div class="modalbox"><a class="x" href="#detail-DA039">×</a><h2>ご注文</h2><p>DA039｜凌雪款 荷花九魚図｜¥13,000</p>
+<form action="https://formsubmit.co/1831007109@qq.com" method="POST">
+<input name="商品" type="hidden" value="DA039｜凌雪款 荷花九魚図｜¥13,000"/>
+<input name="お支払い方法" type="hidden" value="銀行振込"/>
+<input name="_subject" type="hidden" value="【Retro日和】新しいご注文"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_next" type="hidden" value="https://retro-hiyori.com/thanks.html"/>
+<input name="_autoresponse" type="hidden" value="Retro日和をご利用いただきありがとうございます。ご注文内容を受け付けました。在庫確認後、銀行振込のご案内をメールにてお送りいたします。現時点ではご入金なさらないようお願いいたします。"/>
+<input name="_honey" style="display:none" type="text"/>
+<label>お名前</label><input autocomplete="name" name="お名前" required=""/>
+<label>メールアドレス</label><input autocomplete="email" name="email" required="" type="email"/>
+<label>電話番号</label><input autocomplete="tel" name="電話番号" required="" type="tel"/>
+<label>郵便番号</label><input autocomplete="postal-code" inputmode="numeric" name="郵便番号" placeholder="例：650-0000" required=""/>
+<label>配送先住所</label><textarea autocomplete="street-address" name="配送先住所" required=""></textarea>
+<label>備考</label><textarea name="備考"></textarea>
+<label style="display:flex;gap:8px;align-items:flex-start;font-size:12px;margin:4px 0 12px"><input required="" style="width:auto;margin-top:5px" type="checkbox"/>入力した個人情報を、ご注文対応・配送連絡のために利用することに同意します。</label>
+<div class="notice">ご注文送信後、在庫を確認してから銀行振込先をご案内いたします。確認メールが届くまでご入金はお控えください。</div>
+<button class="purchase" type="submit">注文を送信する</button></form></div></section><section class="modal" id="order-DA011"><div class="modalbox"><a class="x" href="#detail-DA011">×</a><h2>ご注文</h2><p>DA011｜任伯年款 鍾馗夜訓図｜¥13,000</p>
+<form action="https://formsubmit.co/1831007109@qq.com" method="POST">
+<input name="商品" type="hidden" value="DA011｜任伯年款 鍾馗夜訓図｜¥13,000"/>
+<input name="お支払い方法" type="hidden" value="銀行振込"/>
+<input name="_subject" type="hidden" value="【Retro日和】新しいご注文"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_next" type="hidden" value="https://retro-hiyori.com/thanks.html"/>
+<input name="_autoresponse" type="hidden" value="Retro日和をご利用いただきありがとうございます。ご注文内容を受け付けました。在庫確認後、銀行振込のご案内をメールにてお送りいたします。現時点ではご入金なさらないようお願いいたします。"/>
+<input name="_honey" style="display:none" type="text"/>
+<label>お名前</label><input autocomplete="name" name="お名前" required=""/>
+<label>メールアドレス</label><input autocomplete="email" name="email" required="" type="email"/>
+<label>電話番号</label><input autocomplete="tel" name="電話番号" required="" type="tel"/>
+<label>郵便番号</label><input autocomplete="postal-code" inputmode="numeric" name="郵便番号" placeholder="例：650-0000" required=""/>
+<label>配送先住所</label><textarea autocomplete="street-address" name="配送先住所" required=""></textarea>
+<label>備考</label><textarea name="備考"></textarea>
+<label style="display:flex;gap:8px;align-items:flex-start;font-size:12px;margin:4px 0 12px"><input required="" style="width:auto;margin-top:5px" type="checkbox"/>入力した個人情報を、ご注文対応・配送連絡のために利用することに同意します。</label>
+<div class="notice">ご注文送信後、在庫を確認してから銀行振込先をご案内いたします。確認メールが届くまでご入金はお控えください。</div>
+<button class="purchase" type="submit">注文を送信する</button></form></div></section><section class="modal" id="order-DA032"><div class="modalbox"><a class="x" href="#detail-DA032">×</a><h2>ご注文</h2><p>DA032｜程璋款 双猫窺魚図｜¥13,000</p>
+<form action="https://formsubmit.co/1831007109@qq.com" method="POST">
+<input name="商品" type="hidden" value="DA032｜程璋款 双猫窺魚図｜¥13,000"/>
+<input name="お支払い方法" type="hidden" value="銀行振込"/>
+<input name="_subject" type="hidden" value="【Retro日和】新しいご注文"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_next" type="hidden" value="https://retro-hiyori.com/thanks.html"/>
+<input name="_autoresponse" type="hidden" value="Retro日和をご利用いただきありがとうございます。ご注文内容を受け付けました。在庫確認後、銀行振込のご案内をメールにてお送りいたします。現時点ではご入金なさらないようお願いいたします。"/>
+<input name="_honey" style="display:none" type="text"/>
+<label>お名前</label><input autocomplete="name" name="お名前" required=""/>
+<label>メールアドレス</label><input autocomplete="email" name="email" required="" type="email"/>
+<label>電話番号</label><input autocomplete="tel" name="電話番号" required="" type="tel"/>
+<label>郵便番号</label><input autocomplete="postal-code" inputmode="numeric" name="郵便番号" placeholder="例：650-0000" required=""/>
+<label>配送先住所</label><textarea autocomplete="street-address" name="配送先住所" required=""></textarea>
+<label>備考</label><textarea name="備考"></textarea>
+<label style="display:flex;gap:8px;align-items:flex-start;font-size:12px;margin:4px 0 12px"><input required="" style="width:auto;margin-top:5px" type="checkbox"/>入力した個人情報を、ご注文対応・配送連絡のために利用することに同意します。</label>
+<div class="notice">ご注文送信後、在庫を確認してから銀行振込先をご案内いたします。確認メールが届くまでご入金はお控えください。</div>
+<button class="purchase" type="submit">注文を送信する</button></form></div></section><section class="modal" id="order-DA005"><div class="modalbox"><a class="x" href="#detail-DA005">×</a><h2>ご注文</h2><p>DA005｜張大千款 金銭荷花図｜¥13,000</p>
+<form action="https://formsubmit.co/1831007109@qq.com" method="POST">
+<input name="商品" type="hidden" value="DA005｜張大千款 金銭荷花図｜¥13,000"/>
+<input name="お支払い方法" type="hidden" value="銀行振込"/>
+<input name="_subject" type="hidden" value="【Retro日和】新しいご注文"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_next" type="hidden" value="https://retro-hiyori.com/thanks.html"/>
+<input name="_autoresponse" type="hidden" value="Retro日和をご利用いただきありがとうございます。ご注文内容を受け付けました。在庫確認後、銀行振込のご案内をメールにてお送りいたします。現時点ではご入金なさらないようお願いいたします。"/>
+<input name="_honey" style="display:none" type="text"/>
+<label>お名前</label><input autocomplete="name" name="お名前" required=""/>
+<label>メールアドレス</label><input autocomplete="email" name="email" required="" type="email"/>
+<label>電話番号</label><input autocomplete="tel" name="電話番号" required="" type="tel"/>
+<label>郵便番号</label><input autocomplete="postal-code" inputmode="numeric" name="郵便番号" placeholder="例：650-0000" required=""/>
+<label>配送先住所</label><textarea autocomplete="street-address" name="配送先住所" required=""></textarea>
+<label>備考</label><textarea name="備考"></textarea>
+<label style="display:flex;gap:8px;align-items:flex-start;font-size:12px;margin:4px 0 12px"><input required="" style="width:auto;margin-top:5px" type="checkbox"/>入力した個人情報を、ご注文対応・配送連絡のために利用することに同意します。</label>
+<div class="notice">ご注文送信後、在庫を確認してから銀行振込先をご案内いたします。確認メールが届くまでご入金はお控えください。</div>
+<button class="purchase" type="submit">注文を送信する</button></form></div></section><footer><span>© 2026 Retro日和</span><span>Kobe, Japan</span></footer>
+</body></html>
