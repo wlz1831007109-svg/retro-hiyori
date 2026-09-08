@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-hidden="true">
+<defs>
+ <linearGradient id="fade" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5f0e8"/><stop offset="1" stop-color="#efe7da"/></linearGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="0.8"/></filter>
+</defs>
+<rect width="900" height="520" fill="url(#fade)"/>
+<g fill="none" stroke="#3d3933" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".86"><path d="M20 440 C90 393.6,115 347.2,170 416.8 C220 353.0,260 300.8,330 405.2 C380 335.6,425 315.3,470 411.0 C535 367.5,570 341.4,625 416.8 C685 370.4,730 364.6,790 425.5"/>
+<path d="M55 455 C190 415,280 448,410 425 C550 400,680 452,820 428" opacity=".45"/><path d="M110 405 q20 -110 42 -160 q25 50 12 160M135 300 q55 35 100 0M125 345 q65 30 120 -5"/><path d="M560 410 q18 -120 38 -210M595 405 q15 -100 34 -185M625 404 q18 -95 35 -160"/><path d="M555 240 l80 -50M575 280 l95 -55M595 325 l80 -40"/><path d="M725 145 q22 18 0 38 q-20 18 0 38"/></g>
+<g fill="#8f2c25" opacity=".85"><rect x="805" y="420" width="52" height="52" rx="2"/><path d="M817 434h28M817 447h28M817 460h18" stroke="#f6eee3" stroke-width="4" fill="none"/></g>
+</svg>

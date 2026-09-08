@@ -1,0 +1,61 @@
+/* Phase 02B — 朝代ページ: 実作品イメージ中心のビジュアル再設計 */
+.history-v3-hero{position:relative;min-height:560px;overflow:hidden;background:#ece5da;border-bottom:1px solid var(--line)}
+.history-v3-hero-bg{position:absolute;inset:0 0 0 46%;overflow:hidden}
+.history-v3-hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 44%;filter:saturate(.72) sepia(.12) contrast(.94)}
+.history-v3-hero-bg:before{content:"";position:absolute;z-index:1;inset:0;background:linear-gradient(90deg,#f4efe7 0%,rgba(244,239,231,.93) 12%,rgba(244,239,231,.28) 48%,rgba(35,30,24,.05) 100%)}
+.history-v3-hero-bg:after{content:"";position:absolute;z-index:1;inset:0;background:linear-gradient(0deg,rgba(92,66,46,.10),transparent 40%)}
+.history-v3-hero .wrap{position:relative;z-index:2;min-height:560px;display:flex;align-items:center}
+.history-v3-copy{width:min(600px,52%);padding:72px 0 64px}
+.history-v3-copy h1{font-size:clamp(44px,6vw,78px);font-weight:400;line-height:1.28;letter-spacing:.055em;margin:10px 0 18px}
+.history-v3-copy>p{font-size:13px;line-height:2;color:var(--muted);max-width:520px}
+.history-v3-kicker{display:flex;align-items:center;gap:12px;color:var(--red);font:10px Arial,sans-serif;letter-spacing:.22em}
+.history-v3-kicker:before{content:"";width:28px;height:1px;background:var(--red)}
+.history-v3-links{display:flex;gap:9px;flex-wrap:wrap;margin-top:28px}
+.history-v3-links a{border:1px solid #b9ad9c;background:rgba(249,246,240,.82);padding:10px 14px;font-size:10px;letter-spacing:.05em;backdrop-filter:blur(3px)}
+.history-v3-links a:hover{border-color:var(--red);color:var(--red)}
+.history-v3-caption{position:absolute;z-index:2;right:24px;bottom:18px;padding:7px 10px;background:rgba(250,247,241,.82);font-size:9px;color:#5c5147;letter-spacing:.03em}
+.history-v3-stamp{position:absolute;right:28px;top:30px;z-index:3;width:52px;height:52px;display:grid;place-items:center;background:var(--red);color:#fff;font-size:12px;letter-spacing:.16em;box-shadow:0 5px 16px rgba(88,36,27,.12)}
+
+.history-v3-guide{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);background:#faf7f1;margin:34px 0 52px}
+.history-v3-guide>div{padding:22px 24px;border-right:1px solid var(--line)}
+.history-v3-guide>div:last-child{border-right:0}
+.history-v3-guide small{display:block;color:var(--red);font:9px Arial,sans-serif;letter-spacing:.16em;margin-bottom:5px}
+.history-v3-guide b{display:block;font-size:17px;font-weight:400;margin-bottom:6px}
+.history-v3-guide p{font-size:11px;color:var(--muted);line-height:1.72;margin:0}
+
+.history-v3-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.history-v3-card{display:grid;grid-template-columns:46% 54%;min-height:275px;background:#f9f6ef;border:1px solid var(--line);overflow:hidden;transition:transform .22s,box-shadow .22s,border-color .22s}
+.history-v3-card:hover{transform:translateY(-3px);box-shadow:0 16px 34px rgba(72,54,38,.09);border-color:#b9aa99}
+.history-v3-card .visual{position:relative;overflow:hidden;background:#dfd4c4}
+.history-v3-card .visual img{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.78) sepia(.08);transition:transform .45s,filter .45s}
+.history-v3-card:hover .visual img{transform:scale(1.025);filter:saturate(.92) sepia(.02)}
+.history-v3-card .visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 70%,rgba(249,246,239,.28) 100%);pointer-events:none}
+.history-v3-card .visual-note{position:absolute;left:10px;bottom:9px;max-width:calc(100% - 20px);font-size:8px;line-height:1.45;color:#f8f2e8;background:rgba(25,22,19,.58);padding:5px 7px;letter-spacing:.02em}
+.history-v3-card .body{padding:25px 24px 22px;display:flex;flex-direction:column}
+.history-v3-card .era-no{font:9px Arial,sans-serif;color:var(--red);letter-spacing:.18em;margin-bottom:4px}
+.history-v3-card .dates{font:9px Arial,sans-serif;color:#8e7e70;letter-spacing:.12em}
+.history-v3-card h2{font-size:26px;line-height:1.3;font-weight:400;margin:5px 0 9px;letter-spacing:.035em}
+.history-v3-card p{font-size:11px;color:var(--muted);line-height:1.78;margin:0 0 14px}
+.history-v3-card .keywords{display:flex;gap:5px;flex-wrap:wrap;margin:auto 0 13px}
+.history-v3-card .keywords span{font-size:8px;border:1px solid #cbbfaf;padding:4px 6px;color:#6f6257;background:#fcfaf6}
+.history-v3-card .arrow{font-size:10px;letter-spacing:.06em;padding-top:11px;border-top:1px solid #d8cec0}
+
+.history-v3-note{display:grid;grid-template-columns:1.15fr .85fr;gap:34px;align-items:start}
+.history-v3-note h2{font-size:30px;font-weight:400;line-height:1.5;margin:8px 0 12px}
+.history-v3-note p{font-size:12px;color:var(--muted);line-height:1.9}
+.history-v3-sourcebox{border-top:1px solid var(--line);padding-top:16px}
+.history-v3-sourcebox summary{cursor:pointer;font-size:11px;color:#665a50;letter-spacing:.04em}
+.history-v3-sourcebox ul{padding-left:18px;margin:12px 0 0}
+.history-v3-sourcebox li{font-size:9px;color:#88796b;line-height:1.75}
+.history-v3-sourcebox a{text-decoration:underline;text-underline-offset:2px}
+
+@media(max-width:900px){
+  .history-v3-hero-bg{inset:0}.history-v3-hero-bg:before{background:linear-gradient(90deg,rgba(244,239,231,.96) 0%,rgba(244,239,231,.86) 45%,rgba(244,239,231,.20) 100%)}
+  .history-v3-copy{width:62%}.history-v3-list{grid-template-columns:1fr}.history-v3-card{min-height:250px}.history-v3-note{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .history-v3-hero{min-height:610px}.history-v3-hero .wrap{min-height:610px;align-items:flex-end}.history-v3-hero-bg{height:46%;bottom:auto}.history-v3-hero-bg:before{background:linear-gradient(0deg,#f4efe7 0%,rgba(244,239,231,.28) 45%,transparent 100%)}
+  .history-v3-copy{width:100%;padding:295px 0 46px}.history-v3-copy h1{font-size:42px}.history-v3-copy>p{font-size:12px}.history-v3-stamp{top:18px;right:18px;width:44px;height:44px}.history-v3-caption{top:245px;bottom:auto;right:16px;font-size:8px}
+  .history-v3-guide{grid-template-columns:1fr;margin:28px 0 38px}.history-v3-guide>div{border-right:0;border-bottom:1px solid var(--line);padding:18px 19px}.history-v3-guide>div:last-child{border-bottom:0}
+  .history-v3-card{grid-template-columns:42% 58%;min-height:205px}.history-v3-card .body{padding:17px 16px 15px}.history-v3-card h2{font-size:20px}.history-v3-card p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;line-height:1.66}.history-v3-card .keywords{display:none}.history-v3-card .visual-note{font-size:7px}.history-v3-card .arrow{font-size:9px}.history-v3-note h2{font-size:25px}
+}

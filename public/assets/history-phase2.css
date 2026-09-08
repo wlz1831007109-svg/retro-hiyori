@@ -1,0 +1,39 @@
+
+/* Phase 02 — 中国絵画史・朝代ページ */
+.history-v2-hero{padding:0;background:var(--paper3);border-bottom:1px solid var(--line)}
+.history-v2-grid{display:grid;grid-template-columns:.9fr 1.1fr;min-height:480px}
+.history-v2-copy{padding:76px max(30px,calc((100vw - 1200px)/2)) 70px max(24px,calc((100vw - 1200px)/2));display:flex;flex-direction:column;justify-content:center}
+.history-v2-copy h1{font-size:clamp(42px,5.2vw,70px);font-weight:400;line-height:1.35;letter-spacing:.06em;margin:12px 0 18px}
+.history-v2-copy p{font-size:13px;color:var(--muted);max-width:610px}
+.history-v2-art{position:relative;overflow:hidden;background:#e5ddd0}
+.history-v2-art>img{width:100%;height:100%;object-fit:cover}
+.history-v2-art:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(243,238,229,.32),transparent 35%)}
+.history-v2-stamp{position:absolute;right:30px;bottom:28px;background:var(--red);color:#fff;width:58px;height:58px;display:grid;place-items:center;z-index:2;font-size:12px;letter-spacing:.08em}
+.history-route{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px}
+.history-route a{border:1px solid var(--line);padding:8px 12px;font-size:10px;background:#faf7f0}
+.history-route a:hover{border-color:var(--red);color:var(--red)}
+.history-intro-band{display:grid;grid-template-columns:1fr 1fr 1fr;border:1px solid var(--line);margin:42px 0 64px;background:#f8f4ed}
+.history-intro-band>div{padding:23px;border-right:1px solid var(--line)}.history-intro-band>div:last-child{border-right:0}
+.history-intro-band b{display:block;font-size:17px;font-weight:400;margin-bottom:5px}.history-intro-band p{font-size:11px;color:var(--muted);margin:0}
+.history-v2-list{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.history-v2-card{border:1px solid var(--line);background:#f8f4ed;display:grid;grid-template-columns:210px 1fr;min-height:205px;overflow:hidden;transition:.25s}
+.history-v2-card:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(80,62,43,.08)}
+.history-v2-card .art{background:#e6ddcf;overflow:hidden}.history-v2-card .art img{width:100%;height:100%;object-fit:cover;transition:.3s}.history-v2-card:hover .art img{transform:scale(1.025)}
+.history-v2-card .copy{padding:23px}.history-v2-card small{font:9px Arial,sans-serif;letter-spacing:.15em;color:var(--red)}
+.history-v2-card h2{font-size:24px;font-weight:400;margin:5px 0 8px}.history-v2-card p{font-size:11px;color:var(--muted);line-height:1.7;margin:0 0 10px}
+.history-v2-card .arrow{font-size:11px;letter-spacing:.06em}
+.dynasty-v2-hero{display:grid;grid-template-columns:.9fr 1.1fr;background:var(--paper3);border-bottom:1px solid var(--line);min-height:510px}
+.dynasty-v2-copy{padding:70px max(30px,calc((100vw - 1200px)/2));display:flex;flex-direction:column;justify-content:center}
+.dynasty-v2-copy h1{font-size:clamp(48px,6vw,78px);font-weight:400;line-height:1.12;margin:7px 0 8px;letter-spacing:.06em}
+.dynasty-dates{font:12px Arial,sans-serif;letter-spacing:.18em;color:var(--red);margin-bottom:18px}
+.dynasty-v2-tagline{font-size:20px;line-height:1.7;margin:0 0 14px;max-width:600px}
+.dynasty-v2-summary{font-size:12px;color:var(--muted);max-width:600px;margin:0}
+.dynasty-v2-art{background:#e5ddd0;position:relative;overflow:hidden}.dynasty-v2-art img{width:100%;height:100%;object-fit:cover}.dynasty-v2-art:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(243,238,229,.28),transparent 45%)}
+.era-switch{display:flex;gap:6px;flex-wrap:wrap;margin-top:27px}.era-switch a{font-size:10px;border-bottom:1px solid var(--line);padding:5px 2px}.era-switch a:hover{border-color:var(--red);color:var(--red)}
+.dynasty-key-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.dynasty-key{border:1px solid var(--line);background:#f8f4ed;overflow:hidden}.dynasty-key .motif{height:145px;background:#e8dfd3;overflow:hidden}.dynasty-key .motif img{width:100%;height:100%;object-fit:cover}.dynasty-key .text{padding:18px}.dynasty-key h3{font-size:18px;font-weight:400;margin:0 0 6px}.dynasty-key p{font-size:11px;color:var(--muted);margin:0;line-height:1.72}
+.dynasty-reading{display:grid;grid-template-columns:1fr .85fr;gap:42px;align-items:start}.dynasty-reading .lead h2{font-size:30px;font-weight:400;margin:7px 0 14px}.dynasty-reading .lead p{font-size:13px;color:var(--muted)}
+.dynasty-note{border-left:1px solid var(--red);padding:6px 0 6px 22px}.dynasty-note b{display:block;font-size:15px;font-weight:400;margin-bottom:7px}.dynasty-note p{font-size:11px;color:var(--muted);margin:0}
+.dynasty-v2-artists .artist-chip{position:relative;padding-left:18px}.dynasty-v2-artists .artist-chip:before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:transparent}.dynasty-v2-artists .artist-chip:hover:before{background:var(--red)}
+.period-nav{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:0}.period-nav a{padding:18px 25px;font-size:11px;background:#f8f4ed}.period-nav a+ a{border-left:1px solid var(--line);text-align:right}.period-nav small{display:block;color:var(--muted);font-size:9px;margin-bottom:2px}
+@media(max-width:900px){.history-v2-grid,.dynasty-v2-hero,.dynasty-reading{grid-template-columns:1fr}.history-v2-art,.dynasty-v2-art{height:360px}.history-v2-list{grid-template-columns:1fr}.dynasty-key-grid{grid-template-columns:1fr 1fr}.dynasty-key:last-child{grid-column:1/-1}}
+@media(max-width:620px){.history-v2-copy,.dynasty-v2-copy{padding:52px 22px}.history-v2-art,.dynasty-v2-art{height:280px}.history-intro-band{grid-template-columns:1fr}.history-intro-band>div{border-right:0;border-bottom:1px solid var(--line)}.history-intro-band>div:last-child{border-bottom:0}.history-v2-card{grid-template-columns:125px 1fr;min-height:175px}.history-v2-card .copy{padding:16px}.history-v2-card h2{font-size:20px}.history-v2-card p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.dynasty-v2-tagline{font-size:17px}.dynasty-key-grid{grid-template-columns:1fr}.dynasty-key:last-child{grid-column:auto}.dynasty-key{display:grid;grid-template-columns:118px 1fr}.dynasty-key .motif{height:100%;min-height:145px}.period-nav a{padding:15px 14px}.era-switch{gap:9px}}
