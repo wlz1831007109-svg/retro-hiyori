@@ -1,0 +1,39 @@
+/* Retro日和 Phase 06 — trust / checkout / global navigation */
+.culture-subnav{border-bottom:1px solid var(--line);background:rgba(250,247,240,.94);backdrop-filter:blur(10px);position:relative;z-index:40}
+.culture-subnav .wrap{display:flex;align-items:center;gap:26px;min-height:38px;overflow:auto;scrollbar-width:none}
+.culture-subnav .wrap::-webkit-scrollbar{display:none}
+.culture-subnav a{white-space:nowrap;font-size:10px;letter-spacing:.08em;color:#6f665d;padding:9px 0;position:relative}
+.culture-subnav a.active,.nav a.active{color:var(--red)}
+.culture-subnav a.active:after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;background:var(--red)}
+.nav a.active:after{right:0}
+.global-service-note{display:flex;gap:14px;flex-wrap:wrap;margin-top:15px;font:10px Arial,sans-serif;color:#9e9488;letter-spacing:.03em}
+.global-service-note span{display:inline-flex;align-items:center;gap:5px}.global-service-note span:before{content:"";width:4px;height:4px;background:#8f2c25;border-radius:50%}
+.search-mark{width:85px;height:66px;display:grid;place-items:center;background:#e8dfd3;color:var(--red);font-size:12px;letter-spacing:.18em}
+
+/* page shells */
+.phase6-hero{background:var(--paper3);border-bottom:1px solid var(--line);padding:70px 0 50px;position:relative;overflow:hidden}
+.phase6-hero:after{content:"日和";position:absolute;right:5%;top:28px;font-size:112px;line-height:1;color:#8f2c250c;letter-spacing:.04em}
+.phase6-hero h1{font-size:44px;font-weight:400;letter-spacing:.08em;margin:8px 0 12px}.phase6-hero p{max-width:720px;color:var(--muted);font-size:13px}
+.phase6-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:42px;align-items:start}.phase6-card{border:1px solid var(--line);background:var(--paper3);padding:28px}.phase6-card.dark{background:var(--dark);border-color:var(--dark);color:#eee}.phase6-card h2,.phase6-card h3{font-weight:400;margin:7px 0 10px}.phase6-card p{font-size:12px;color:var(--muted)}.phase6-card.dark p{color:#aaa399}
+.inquiry-types{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:35px}.inquiry-type{border:1px solid var(--line);background:#f8f4ed;padding:20px;min-height:158px}.inquiry-type .num{font:10px Arial,sans-serif;color:var(--red);letter-spacing:.12em}.inquiry-type h3{font-size:18px;font-weight:400;margin:12px 0 7px}.inquiry-type p{font-size:11px;color:var(--muted);margin:0}
+.form-panel{background:#ebe3d7;border:1px solid var(--line);padding:30px}.form-panel .form-grid{margin-top:22px}.field .hint{font-size:9px;color:#8c8175;margin-top:4px}.field.check{display:flex;align-items:flex-start;gap:9px}.field.check input{width:auto;margin-top:5px}.field.check label{font-size:10px;line-height:1.7}.field.check a{text-decoration:underline;text-underline-offset:2px}.required{color:var(--red);font-size:9px;margin-left:4px}.form-status{font-size:11px;color:var(--red);min-height:18px;margin:4px 0}.submit[disabled]{opacity:.55;cursor:wait}
+.contact-side{display:grid;gap:14px}.contact-side .phase6-card{min-height:145px}.contact-side .big-link{font-size:20px;display:inline-block;margin-top:8px;border-bottom:1px solid var(--ink)}
+
+/* checkout */
+.order-steps{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);margin:24px 0 34px}.order-step{padding:15px 18px;border-right:1px solid var(--line);font-size:11px;color:var(--muted)}.order-step:last-child{border:0}.order-step b{display:block;color:var(--ink);font-weight:400;font-size:13px;margin-top:3px}.order-step .n{color:var(--red);font:10px Arial,sans-serif}
+.cart-item button{border:1px solid var(--line);background:#faf7f0;padding:3px 8px;cursor:pointer;margin-top:9px}.cart-item button:hover{border-color:var(--ink)}.cart-price{font:14px Arial,sans-serif}.cart-summary{border:1px solid var(--line);background:#ebe3d7}.cart-summary .form-grid{display:block}.cart-summary .field{margin-bottom:11px}.cart-summary .field.full{margin-bottom:11px}.cart-summary .submit{width:100%;margin-top:5px}.summary-note{border-top:1px solid #cbbfaf;margin-top:14px;padding-top:14px;font-size:10px;color:#746a60}.payment-box{border:1px solid #bfae9c;background:#f8f4ed;padding:14px;margin:16px 0}.payment-box b{font-weight:400;display:block;margin-bottom:4px}.payment-box p{font-size:10px;color:var(--muted);margin:0}.empty .btn{margin-top:18px}
+
+/* success */
+.success-shell{max-width:850px;margin:auto;padding:85px 0 100px;text-align:center}.success-mark{width:68px;height:68px;border:1px solid var(--red);color:var(--red);margin:0 auto 22px;display:grid;place-items:center;font-size:13px;letter-spacing:.15em}.success-shell h1{font-size:39px;font-weight:400;line-height:1.5;margin:10px 0}.success-shell>p{max-width:620px;margin:0 auto 28px;color:var(--muted);font-size:13px}.success-next{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line);text-align:left;margin:34px 0}.success-next div{padding:20px;border-right:1px solid var(--line)}.success-next div:last-child{border:0}.success-next small{color:var(--red);font:9px Arial,sans-serif}.success-next b{font-weight:400;display:block;margin:5px 0}.success-next p{font-size:10px;color:var(--muted);margin:0}.success-actions{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+
+/* legal / policy */
+.policy-intro{max-width:820px;margin-bottom:30px;color:var(--muted);font-size:12px}.policy-toc{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 25px}.policy-toc a{border:1px solid var(--line);padding:6px 10px;font-size:10px;background:#f8f4ed}.policy-box{background:#f8f4ed;border:1px solid var(--line);padding:22px;margin:26px 0}.policy-box h3{font-weight:400;margin:0 0 8px}.policy-box p{font-size:11px;color:var(--muted);margin:0}.prose table{background:#f8f4ed;border-top:1px solid var(--line)}.prose th,.prose td{vertical-align:top}.pending-info{display:inline-block;background:#8f2c2510;color:var(--red);border:1px solid #8f2c2540;padding:5px 8px;font-size:10px}
+
+/* wholesale form only */
+.business-form-note{border-left:2px solid var(--red);padding:11px 16px;background:#f8f4ed;font-size:10px;color:var(--muted);margin:0 0 18px}
+
+/* footer refinements */
+.footer .foot-grid{border-bottom:1px solid #403a34;padding-bottom:34px}.footer .copyright{border-top:0;margin-top:18px;padding-top:0;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}.footer .social-link{color:#ded3c5!important}.footer .social-link:after{content:" ↗"}.footer .foot-trust{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px;font-size:9px;color:#8e8478}.footer .foot-trust span{border:1px solid #403a34;padding:5px 8px}
+
+@media(max-width:1000px){.culture-subnav{display:none}.phase6-grid{grid-template-columns:1fr}.inquiry-types{grid-template-columns:1fr 1fr}.success-next{grid-template-columns:1fr}.success-next div{border-right:0;border-bottom:1px solid var(--line)}.success-next div:last-child{border-bottom:0}}
+@media(max-width:620px){.phase6-hero{padding:50px 0 35px}.phase6-hero h1{font-size:32px}.phase6-hero:after{font-size:72px}.inquiry-types{grid-template-columns:1fr}.form-panel{padding:20px}.order-steps{grid-template-columns:1fr}.order-step{border-right:0;border-bottom:1px solid var(--line)}.order-step:last-child{border-bottom:0}.success-shell{padding:65px 0 80px}.success-shell h1{font-size:30px}.footer .copyright{display:block}.footer .copyright span{display:block;margin-top:7px}}
