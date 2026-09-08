@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320">
+<rect width="520" height="320" fill="#eee7dc"/>
+<g fill="none" stroke="#4d463f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M0 270C70 238 94 130 163 123c52-5 65 80 112 78 58-2 72-137 145-137 39 0 67 48 100 92"/>
+<path d="M8 286c82-25 142-20 206 1 57 19 104 8 154-11 48-18 92-15 144-2" opacity=".65"/>
+<path d="M321 244h78m-61 0v-51h44v51m-50-51 28-23 30 23m-13-51v28"/>
+<path d="M118 256c15-22 22-46 24-75m-12 35c-19-8-34-19-44-35m51 9c14-12 24-27 31-44"/>
+</g>
+<g stroke="#8f2c25" fill="none" stroke-width="2"><rect x="439" y="37" width="42" height="42" rx="2"/><path d="M450 48h20v20h-20z"/></g>
+<text x="33" y="52" font-family="serif" font-size="21" fill="#6f665d" letter-spacing="3">知る</text>
+</svg>

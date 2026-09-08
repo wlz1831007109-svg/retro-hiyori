@@ -1,0 +1,43 @@
+/* Retro日和 Phase 1 — homepage illustration refinement */
+.hero-links{gap:14px}
+.hero-link{min-height:154px;padding:18px 18px 14px;display:flex;flex-direction:column;justify-content:flex-end;background:#f8f3eb;overflow:hidden}
+.hero-links .hero-link img{position:absolute;right:-4px;top:0;bottom:auto;width:58%;height:100%;object-fit:cover;opacity:.78;filter:none;mix-blend-mode:multiply}
+.hero-link b,.hero-link small{position:relative;z-index:2;width:52%}
+.hero-link b{font-size:22px}.hero-link small{font-size:10px}
+
+.home-era-grid{display:grid;grid-template-columns:repeat(7,1fr);border-left:1px solid var(--line);border-top:1px solid var(--line);background:#f8f4ed}
+.home-era-card{border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-width:0;background:#f8f4ed;transition:.2s}
+.home-era-card:hover{background:#fffaf1}
+.home-era-card .era-visual{height:118px;overflow:hidden;background:#e9e0d4}
+.home-era-card .era-visual img{width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply;transition:.3s}
+.home-era-card:hover .era-visual img{transform:scale(1.025)}
+.home-era-card .era-copy{padding:14px 14px 16px}
+.home-era-card .era-name{font-size:22px;letter-spacing:.1em}
+.home-era-card .era-years{font:9px Arial,sans-serif;letter-spacing:.06em;color:#857b70;margin:2px 0 7px}
+.home-era-card p{font-size:10px;line-height:1.55;color:var(--muted);margin:0}
+.home-era-note{display:grid;grid-template-columns:1.05fr .95fr;gap:0;border:1px solid var(--line);border-top:0;background:#f6f0e7}
+.home-era-note .visual{min-height:210px;background:url('home-illustrations/song.svg') center/cover no-repeat}
+.home-era-note .copy{padding:34px 38px;display:flex;flex-direction:column;justify-content:center}
+.home-era-note h3{font-size:24px;font-weight:400;margin:7px 0 8px}.home-era-note p{font-size:12px;color:var(--muted);margin:0}
+
+.home-format-grid{display:grid;grid-template-columns:repeat(3,1fr);border-left:1px solid var(--line);border-top:1px solid var(--line)}
+.home-format-card{display:grid;grid-template-columns:44% 1fr;min-height:180px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:#f8f4ed;overflow:hidden}
+.home-format-card .visual{background:#e8dfd3;display:grid;place-items:center;padding:10px;overflow:hidden}
+.home-format-card .visual img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;opacity:.88}
+.home-format-card .copy{padding:20px 16px;display:flex;flex-direction:column;justify-content:center}
+.home-format-card h3{font-size:19px;font-weight:400;margin:0 0 5px}.home-format-card p{font-size:10px;color:var(--muted);line-height:1.55;margin:0}
+.home-format-card .arrow{font-family:Arial,sans-serif;margin-top:10px;font-size:12px;color:var(--red)}
+
+.home-visual-rule{height:92px;margin-top:38px;background:url('home-illustrations/song.svg') center 48%/cover no-repeat;opacity:.28;filter:grayscale(.25);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+@media(max-width:1000px){
+ .home-era-grid{grid-template-columns:repeat(4,1fr)}
+ .home-format-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:620px){
+ .hero-link{min-height:126px}.hero-links .hero-link img{width:53%;opacity:.72}.hero-link b,.hero-link small{width:56%}
+ .home-era-grid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border-top:1px solid var(--line)}
+ .home-era-card{min-width:155px;scroll-snap-align:start}.home-era-card .era-visual{height:96px}.home-era-card p{display:none}
+ .home-era-note{grid-template-columns:1fr}.home-era-note .visual{min-height:145px}.home-era-note .copy{padding:24px 20px}
+ .home-format-grid{grid-template-columns:1fr 1fr}.home-format-card{grid-template-columns:1fr;min-height:0}.home-format-card .visual{height:126px}.home-format-card .copy{padding:14px 12px}.home-format-card p{display:none}
+}
